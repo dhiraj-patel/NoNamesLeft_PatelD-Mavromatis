@@ -1,13 +1,14 @@
 from pymongo import MongoClient
-import csv 
-
+import csv
 
 c = MongoClient("lisa.stuy.edu")
-
 ourDB = c.NoNamesLeft
 
-d = {}
+#-------- CSV stuff --------
+#open csv
+fObj = open("peeps.csv")
+#read csv
+d=csv.DictReader(fObj)
 
-
-ourDB.foo.insert_one(DICTIONARY)
-
+for i in d:
+    ourDB.foo.insert_one(i)
