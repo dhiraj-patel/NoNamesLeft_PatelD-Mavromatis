@@ -12,7 +12,7 @@ for i in d:
     numClass = 0
     for j in i:
         if j in classes:
-            average += i[j]
+            average += int(i[j])
             numClass +=1 
     print "name: %s , id: %d , average: %d"%(i['name'],i['id'],average) 
 
