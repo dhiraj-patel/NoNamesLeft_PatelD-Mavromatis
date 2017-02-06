@@ -35,7 +35,7 @@ obj2.close()
 
 #-------- mongo stuf --------
 
-c = MongoClient('149.89.150.102')
+c = MongoClient('149.89.150.100')
 ourDB = c.NoNamesLeft
 
 for i in dic:
