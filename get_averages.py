@@ -2,7 +2,7 @@ from pymongo import MongoClient
 
 
 c = MongoClient("149.89.150.100")
-ourDB = c.NoNamesLeft
+ourDB = c.noNamesLeft
 classes = ["softdev","systems","ceramics","greatbooks"]
 
 d = ourDB.students.find()
