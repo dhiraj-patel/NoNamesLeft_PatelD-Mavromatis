@@ -18,13 +18,21 @@ students = ourDB.students.find()
 toIns = []
 
 for i in d:
+    #init
     me = {}
+
+    #teacher info
     for j in i:
         me[j] = i[j]
+
+    #init
     me['student'] = []
+
+    #student info
     for j in students:
         if (me['code'] in j):
             me['student'].append(str(j['name'])
-    toIns.append(me)
+
+    print me
 
 ourDB.teachers.insert_many(toIns)
