@@ -34,4 +34,5 @@ for i in d:
             if (teacher['code'] in j):
                 teacher['student'].append(str(j['name'])
 
-    ourDB.teachers.insert_one(teacher)
+    print teacher
+    #ourDB.teachers.insert_one(teacher)
