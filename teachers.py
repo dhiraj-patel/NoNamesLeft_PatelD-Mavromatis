@@ -20,7 +20,6 @@ toIns = []
 for i in d:
     #init
     teacher = {}
-    print "done"
 
     #teacher info
     for j in i:
@@ -34,5 +33,5 @@ for i in d:
         if (teacher['code'] in j):
             teacher['student'].append(str(j['name'])'''
 
-    print "jasods"
+    print teacher
     #ourDB.teachers.insert_one(teacher)
