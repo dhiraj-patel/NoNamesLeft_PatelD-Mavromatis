@@ -19,20 +19,20 @@ toIns = []
 
 for i in d:
     #init
-    me = {}
+    teacher = {}
 
     #teacher info
     for j in i:
-        me[j] = i[j]
+        teacher[j] = i[j]
 
     #init
-    me['student'] = []
+    teacher['student'] = []
 
     #student info
     for j in students:
-        if (me['code'] in j):
-            me['student'].append(str(j['name'])
+        if (teacher['code'] in j):
+            teacher['student'].append(str(j['name'])
 
-    print me
+    print teacher
 
 ourDB.teachers.insert_many(toIns)
