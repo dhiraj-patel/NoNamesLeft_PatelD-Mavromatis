@@ -30,9 +30,9 @@ for i in d:
     teacher['student'] = []
 
     #student info
-    for j in students:
+    '''for j in students:
         if (teacher['code'] in j):
-            teacher['student'].append(str(j['name'])
+            teacher['student'].append(str(j['name'])'''
 
     print "jasods"
     #ourDB.teachers.insert_one(teacher)
