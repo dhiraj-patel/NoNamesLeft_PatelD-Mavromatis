@@ -20,7 +20,6 @@ toIns = []
 for i in d:
     #init
     teacher = {}
-    print teacher
 
     #teacher info
     for j in i:
@@ -28,12 +27,13 @@ for i in d:
 
     #init
     teacher['student'] = []
+    print teacher
 
     #student info
     for j in students:
         if (teacher['code'] in j):
             teacher['student'].append(str(j['name'])
 
-    print teacher
+    #print teacher
 
 ourDB.teachers.insert_many(toIns)
