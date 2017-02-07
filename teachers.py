@@ -29,9 +29,10 @@ for i in d:
     teacher['student'] = []
 
     #student info
-    '''for j in students:
-        if (teacher['code'] in j):
-            teacher['student'].append(str(j['name'])'''
+    for j in students:
+        print j
+        #if (teacher['code'] in j):
+        #    teacher['student'].append(str(j['name'])
 
     print teacher
     #ourDB.teachers.insert_one(teacher)
