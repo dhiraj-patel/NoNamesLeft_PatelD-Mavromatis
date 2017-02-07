@@ -20,6 +20,7 @@ toIns = []
 for i in d:
     #init
     teacher = {}
+    print "done"
 
     #teacher info
     for j in i:
