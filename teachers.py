@@ -15,6 +15,8 @@ ourDB = c.noNamesLeft
 
 students = ourDB.students.find()
 
+toIns = []
+
 for i in d:
     me = {}
     for j in i:
@@ -23,4 +25,6 @@ for i in d:
     for j in students:
         if (me['code'] in j):
             me['student'].append(str(j['name'])
-    ourDB.teachers.insert_one(me)
+    toIns.append(me)
+
+ourDB.teachers.insert_many(toIns)
