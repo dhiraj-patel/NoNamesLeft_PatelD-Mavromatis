@@ -36,4 +36,4 @@ for i in d:
 
     #print teacher
 
-ourDB.teachers.insert_many(toIns)
+#ourDB.teachers.insert_many(toIns)
