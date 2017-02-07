@@ -25,15 +25,13 @@ for i in d:
     for j in i:
         teacher[j] = i[j]
 
-    #init
-    teacher['student'] = []
-    print teacher
+        #init
+        teacher['student'] = []
+        print teacher
 
-    #student info
-    for j in students:
-        if (teacher['code'] in j):
-            teacher['student'].append(str(j['name'])
+        #student info
+        for j in students:
+            if (teacher['code'] in j):
+                teacher['student'].append(str(j['name'])
 
-    #print teacher
-
-#ourDB.teachers.insert_many(toIns)
+    ourDB.teachers.insert_one(teacher)
