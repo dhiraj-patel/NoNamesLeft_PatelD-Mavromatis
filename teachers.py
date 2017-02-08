@@ -26,7 +26,7 @@ for i in d:
     key = teacher['code']
     studentList = ourDB.students.find({key: {"$exists": True}})
 
-    for j in students:
+    for j in studentList:
         teacher['students'].append(j['name'])
 
     print teacher
