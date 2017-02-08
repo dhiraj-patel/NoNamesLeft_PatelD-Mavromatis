@@ -21,10 +21,13 @@ for i in d:
     for j in i:
         teacher[j] = i[j]
 
-    #init
-    key = teacher['code']
-    students = ourDB.students.find({key: {"$exists": True}})
-    for j in students:
-        print j
+    teacher['students'] = []
 
+    key = teacher['code']
+    studentList = ourDB.students.find({key: {"$exists": True}})
+
+    for j in students:
+        teacher['students'].append(j['name'])
+
+    print teacher
     #ourDB.teachers.insert_one(teacher)
