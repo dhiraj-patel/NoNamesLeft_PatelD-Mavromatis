@@ -13,10 +13,6 @@ d=csv.DictReader(fObj)
 c = MongoClient('149.89.150.100')
 ourDB = c.noNamesLeft
 
-students = ourDB.students.find()
-
-toIns = []
-
 for i in d:
     #init
     teacher = {}
@@ -26,6 +22,8 @@ for i in d:
         teacher[j] = i[j]
 
     #init
+    key = teacher['code']
+    print key
     print ourDB.students.find({key: {"$exists": True}})
 
     #ourDB.teachers.insert_one(teacher)
