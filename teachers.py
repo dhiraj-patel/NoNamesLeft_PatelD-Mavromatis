@@ -23,7 +23,8 @@ for i in d:
 
     #init
     key = teacher['code']
-    print key
-    print ourDB.students.find({key: {"$exists": True}})
+    students = ourDB.students.find({key: {"$exists": True}})
+    for j in students:
+        print j
 
     #ourDB.teachers.insert_one(teacher)
