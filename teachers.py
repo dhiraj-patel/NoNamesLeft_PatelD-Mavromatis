@@ -29,5 +29,4 @@ for i in d:
     for j in studentList:
         teacher['students'].append(j['name'])
 
-    print teacher
-    #ourDB.teachers.insert_one(teacher)
+    ourDB.teachers.insert_one(teacher)
