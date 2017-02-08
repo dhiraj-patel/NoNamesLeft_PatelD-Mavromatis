@@ -10,7 +10,7 @@ d=csv.DictReader(fObj)
 
 #-------- connecting to mongo stuf --------
 
-c = MongoClient('149.89.150.100')
+c = MongoClient('lisa.stuy.edu')
 ourDB = c.noNamesLeft
 
 for i in d:
