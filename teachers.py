@@ -27,6 +27,6 @@ for i in d:
     studentList = ourDB.students.find({key: {"$exists": True}})
 
     for j in studentList:
-        teacher['students'].append(j['name'])
+        teacher['students'].append(j['id'])
 
     ourDB.teachers.insert_one(teacher)
